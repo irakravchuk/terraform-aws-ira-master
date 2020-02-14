@@ -65,12 +65,12 @@ resource "aws_instance" "test_instance_my_instance1" {
 instance_type               = var.instance_type
    subnet_id                   = var.subnet
     associate_public_ip_address = var.associate_public_ip
-    tags = merge({ "Name" = format("k.kotov-test -> %s -> %s", substr ("🤔🤷", 0,1), data.aws_ami.ubuntu.name) }, var.tags)
+    tags = merge({ "Name" = format("i.kravcuk-test -> %s -> %s", substr ("🤔🤷", 0,1), data.aws_ami.ubuntu.name) }, var.tags)
     timeouts {
     create = "10m"
     delete = "15m"
        }
-  #tags = merge({ "Name" = "k.kotov"}, var.tags)
+  #tags = merge({ "Name" = "i.kravcuk"}, var.tags)
  }
 
 variable "failover_replica_ip_configuration" {
@@ -93,7 +93,7 @@ variable "failover_replica_ip_configuration" {
 resource "aws_ebs_volume" "ebs-volume_for_testing_terraform-AllowFullS3Access" {
   availability_zone = "us-east-1a"
         size = 1
-  tags = merge({ "Name" = "k.kotov"}, var.tags)
+  tags = merge({ "Name" = "i.kravcuk"}, var.tags)
     }
 
 
