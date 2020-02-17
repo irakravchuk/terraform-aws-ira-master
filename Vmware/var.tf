@@ -1,12 +1,12 @@
-variable "user" {
+variable "vsphere_user" {
   type = string
   default = "kira"
 }
-variable "password" {
+variable "vsphere_password" {
   type = string
   default = "kirakira"
 }
-variable "server" {
+variable "vsphere_server" {
   type = string
   default = "VSPHERE_SERVER"
 }
