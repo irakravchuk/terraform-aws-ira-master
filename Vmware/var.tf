@@ -8,7 +8,7 @@ variable "vsphere_password" {
 }
 variable "vcenter_server" {
   type = string
-  default = "dc1"
+  default = "VMware vCenter Server 6.7"
 }
 
 
