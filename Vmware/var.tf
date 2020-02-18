@@ -1,6 +1,6 @@
 variable "vsphere_user" {
   type = string
-  default = "kira"
+  default = "scalr-user@scalr.local"
 }
 variable "vsphere_password" {
   type = string
