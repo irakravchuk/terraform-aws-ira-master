@@ -8,5 +8,5 @@ variable "vsphere_password" {
 }
 variable "vsphere_server" {
   type = string
-  default = "VSPHERE_SERVER"
+  default = "169.254.169.254:53"
 }
