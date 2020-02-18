@@ -8,5 +8,5 @@ variable "vsphere_password" {
 }
 variable "vcenter_server" {
   type = string
-  default = 10.31.252.5
+  default = "vcentre_10.31.252.5"
 }
