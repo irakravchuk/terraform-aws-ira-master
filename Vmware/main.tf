@@ -1,4 +1,4 @@
-provider vsphere {
+provider "vsphere" {
   allow_unverified_ssl = true
   user           = var.vsphere_user
   password       = var.vsphere_password
