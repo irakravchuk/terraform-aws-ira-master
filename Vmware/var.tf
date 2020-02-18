@@ -8,9 +8,5 @@ variable "vsphere_password" {
 }
 variable "vcenter_server" {
   type = string
-  default = VirtualCenter 6.0}
-
-
-
-
-
+  default = VirtualCenter 6.0
+  }
