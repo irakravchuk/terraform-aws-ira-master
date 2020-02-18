@@ -4,7 +4,7 @@ variable "vsphere_user" {
 }
 variable "vsphere_password" {
   type = string
-  default = "kirakira"
+  default = "SuperScalr123!"
 }
 variable "vcenter_server" {
   type = string
