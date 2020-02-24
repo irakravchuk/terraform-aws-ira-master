@@ -84,7 +84,7 @@ variable "failover_replica_ip_configuration" {
   default = {
     authorized_networks = []
     ipv4_enabled        = true
-    private_network     = true
+    private_network     = 1
     require_ssl         = false
   }
 }
