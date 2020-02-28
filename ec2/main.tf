@@ -109,17 +109,17 @@ data "aws_iam_policy_document" "bucket_policy" {
 
 # Our default security group to access
 # the instances over SSH and HTTP
-resource "aws_security_group" "default" {
-  name        = "terraform_example"
-  description = "Used in the terraform"
-  vpc_id      = "vpc-596aa03e"
+#resource "aws_security_group" "default" {
+ # name        = "terraform_example"
+  #description = "Used in the terraform"
+  #vpc_id      = "vpc-596aa03e"
   # SSH access from anywhere
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
+  #ingress {
+   # from_port   = 22
+    #to_port     = 22
+    #protocol    = "tcp"
+    #cidr_blocks = ["0.0.0.0/0"]
+  #}
 
   # HTTP access from the VPC
   ingress {
