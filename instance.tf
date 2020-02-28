@@ -1,8 +1,8 @@
 # Name of module
-module "ec2" {
+module "ik" {
   
   # Module source
-     source  = "./ec2"
+     source  = "./ik"
   }  
   
    #module "json" {
